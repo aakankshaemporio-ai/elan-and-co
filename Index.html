@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ÉLAN & CO.</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #111111;
+      --secondary: #f5f5f5;
+      --accent: #b7a57a;
+      --text-light: #666;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--primary);
+      background: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 24px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      margin-left: 32px;
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 120px 80px;
+      background: var(--secondary);
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      color: var(--text-light);
+      font-size: 18px;
+    }
+
+    section {
+      padding: 100px 80px;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: var(--text-light);
+      font-size: 16px;
+    }
+
+    .values {
+      background: #fafafa;
+      text-align: center;
+    }
+
+    .values h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 60px;
+    }
+
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .value-card {
+      padding: 40px;
+      background: white;
+      border: 1px solid #eee;
+    }
+
+    .value-card h4 {
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .value-card p {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    footer {
+      padding: 40px 80px;
+      border-top: 1px solid #eee;
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 900px) {
+      header, section, .hero, footer {
+        padding: 40px 24px;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      .value-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>ÉLAN & CO.</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Design with Intention</h2>
+    <p>
+      ÉLAN & CO. is a contemporary lifestyle brand focused on minimal design,
+      premium quality, and intentional living.
+    </p>
+  </section>
+
+  <section class="about">
+    <div>
+      <h3>Our Philosophy</h3>
+      <p>
+        We believe in thoughtful creation. Every product by ÉLAN & CO.
+        blends refined aesthetics with purpose, designed to elevate
+        everyday living without excess.
+      </p>
+    </div>
+    <div>
+      <p>
+        Rooted in simplicity and craftsmanship, our collections are made
+        for modern lifestyles — timeless, functional, and consciously designed.
+      </p>
+    </div>
+  </section>
+
+  <section class="values">
+    <h3>What We Stand For</h3>
+    <div class="value-grid">
+      <div class="value-card">
+        <h4>Minimal Design</h4>
+        <p>Clean lines, calm palettes, and timeless silhouettes.</p>
+      </div>
+      <div class="value-card">
+        <h4>Premium Quality</h4>
+        <p>Crafted with care, using high-quality materials.</p>
+      </div>
+      <div class="value-card">
+        <h4>Intentional Living</h4>
+        <p>Products designed with purpose, not excess.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 ÉLAN & CO. All rights reserved.
+  </footer>
+
+</body>
+</html>
